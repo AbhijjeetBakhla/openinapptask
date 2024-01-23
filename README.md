@@ -18,18 +18,20 @@ priority)
 be based on priority of the user, i.e. first the user with priority 0 should be called,
 then 1 and then 2. The user should only be called if the previous user does not
 attend the call. This priority should be fetched from the user table.
+
 Instructions:
-● Proper validation should be there while taking input and authenticating user for api
+ ● Proper validation should be there while taking input and authenticating user for api
 calls
-● Error handling should be implemented wherever necessary and user friendly error
+ ● Error handling should be implemented wherever necessary and user friendly error
 should be thrown
-● You can use https://jwt.io/ for creating a jwt token with user_id and only
+ ● You can use https://jwt.io/ for creating a jwt token with user_id and only
 corresponding decoding logic should be there
-● You should also update the corresponding sub tasks in case of task updation and
+ ● You should also update the corresponding sub tasks in case of task updation and
 deletion
-● Sub task model and user table is given, you have to make task model accordingly
-● Task should also have priority and status (refer below for both)
-● You can use postman to demonstrate all the apis
+ ● Sub task model and user table is given, you have to make task model accordingly
+ ● Task should also have priority and status (refer below for both)
+ ● You can use postman to demonstrate all the apis
+
 Sub Task model
 id (int, unique identifier)
 task_id (int)//references task table
